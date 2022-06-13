@@ -1,0 +1,132 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.v-application--is-ltr .v-list-item__avatar:first-child {
+    margin: 0 !important;
+}
+
+.drawer {
+    box-shadow: 0px 4px 12px 6px rgba(0, 0, 0, 0.15);
+}
+
+.drawer .logo-drawer {
+    padding-top: 72px;
+    padding-bottom: 92px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.drawer .v-avatar {
+    width: 100% !important;
+    height: 59px !important;
+    min-width: auto !important;
+}
+
+.drawer .v-list--nav {
+    padding: 0 !important;
+}
+
+.drawer .menu .menu-drawer {
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 !important;
+    box-shadow: 2px 4px 12px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.drawer .menu .menu-drawer .v-list--nav{
+    margin-bottom: 0 !important;
+}
+
+.v-list--nav .v-list-item:not(:last-child):not(:only-child),
+.v-list--rounded .v-list-item:not(:last-child):not(:only-child){
+    margin-bottom: 0 !important;
+}
+
+.drawer .v-list--nav .v-list-item{
+    padding: 0 22px !important;
+}
+
+.drawer .v-list--nav .submenu.v-list-item{
+    padding-left: 36px !important;
+}
+
+.drawer .menu-drawer .v-list-group--link{
+    color: #000;
+}
+
+.drawer .menu-drawer .v-list-group--active{
+    border-radius: 8px;
+    background-color: #300F50;
+    color: #fff !important;
+}
+
+.drawer .menu-drawer .v-list-group__items .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled){
+    color: #fff !important;
+}
+
+.drawer .menu-drawer .v-list-group__items .v-list-item--active{
+    color: #fff;
+    background-color: #300F50;
+    font-weight: bold;
+}
+
+.drawer .menu-drawer .v-list-group__items .theme--light.v-icon{
+    color: #fff;
+}
+
+
+.drawer .footer-drawer {
+    display: flex;
+    background-color: #300F50;
+    margin-bottom: 36px;
+    margin-top: 10px;
+    margin-left: 21px;
+    margin-right: 22px;
+    padding: 26px 10px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.drawer .footer-drawer p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.drawer .footer-drawer .desc-footer-drawer {
+    padding-left: 10px;
+}
+
+.drawer .footer-drawer p.role {
+    margin-bottom: 0;
+}
+
+.drawer .footer-drawer p.username {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.theme--light.v-select .v-select__selection--comma{
+    color: #fff !important;
+}
+
+.v-text-field > .v-input__control > .v-input__slot:before{
+    border: none !important;
+}
+
+.drawer .footer-drawer .theme--light.v-icon{
+    color: #fff !important;
+}
+
+.drawer .footer-drawer .v-text-field{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.drawer .footer-drawer .v-text-field__details{
+    display: none;
+}
+
+.drawer .footer-drawer .v-input__slot{
+    margin-bottom: 0;
+}

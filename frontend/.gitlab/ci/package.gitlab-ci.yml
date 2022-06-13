@@ -1,0 +1,35 @@
+---
+.base-package-image:
+  stage: package
+  image:
+    name: gcr.io/kaniko-project/executor:v1.5.1-debug
+    entrypoint: [""]
+  variables:
+    PACKAGE_BRANCH: develop
+    TZ: Asia/Jakarta
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop" && $CI_PROJECT_NAMESPACE == "bapenda"'
+  before_script:
+    - export REGISTRY_AUTH=$(printf $REGISTRY_USERNAME:$REGISTRY_PASSWORD | base64)
+    - printf "{\"auths\":{\"registry.pusilkom.com\":{\"auth\":\"$REGISTRY_AUTH\"}}}" > /kaniko/.docker/config.json
+  script:
+    - /kaniko/executor
+      --context $CI_PROJECT_DIR
+      --destination registry.pusilkom.com/bapenda/bapenda-pkb-bbnkb-frontend:$CI_COMMIT_BRANCH
+      --destination registry.pusilkom.com/bapenda/bapenda-pkb-bbnkb-frontend:$CI_COMMIT_SHORT_SHA
+      --single-snapshot
+      --use-new-run
+      --cleanup
+      --label org.opencontainers.image.created="$(date -Iseconds)"
+      --label org.opencontainers.image.authors="Pusat Ilmu Komputer Universitas Indonesia"
+      --label org.opencontainers.image.url=$CI_PROJECT_URL
+      --label org.opencontainers.image.source=$CI_REPOSITORY_URL
+      --label org.opencontainers.image.version=$CI_COMMIT_BRANCH
+      --label org.opencontainers.image.revision=$CI_COMMIT_SHA
+      --label org.opencontainers.image.vendor="Pusat Ilmu Komputer Universitas Indonesia"
+      --label org.opencontainers.image.title="Frontend PPSDM Dashboard"
+      --label org.opencontainers.image.description="Komponen frontend aplikasi PPSDM Dashboard"
+  after_script:
+    - rm /kaniko/.docker/config.json
+    - unset REGISTRY_AUTH
+  cache: {}

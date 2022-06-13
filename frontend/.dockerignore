@@ -1,0 +1,8 @@
+# Ignore the following files & folders when building the container image:
+.devcontainer/
+.gitlab/
+deploy/
+node_modules/
+.editorconfig
+.gitlab-ci.yml
+*.md

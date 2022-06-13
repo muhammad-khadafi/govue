@@ -1,0 +1,122 @@
+
+/* Login Wrapper */
+.login-wrapper {
+    padding-top: 2%;
+}
+
+.login-wrapper .v-col {
+    align-self: center;
+}
+
+.login-wrapper .login-content {
+    max-width: 468px;
+    padding: 36px 49px 36px 49px !important;
+    margin: auto;
+}
+
+.login-wrapper .login-content .login-logo {
+    width: 78%;
+    margin: auto;
+}
+
+.login-wrapper .login-content .login-desc {
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 36px;
+}
+
+.login-wrapper .login-content .username .label,
+.login-wrapper .login-content .password .label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.login-wrapper .login-content .password {
+    margin-bottom: 25px;
+}
+
+.login-wrapper .login-content .v-input__slot {
+    min-height: 34px !important;
+}
+
+.login-wrapper .login-content .v-input__append-inner {
+    margin-top: 0;
+    padding: 6px;
+}
+
+.login-wrapper .login-content input:-internal-autofill-selected {
+    background-color: #fff !important;
+}
+
+.login-wrapper .login-content .button-login {
+    width: 100%;
+    height: 34px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 0;
+    outline: none;
+    border: none;
+    background: #0E0E4B !important;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+    margin-top: 45px;
+    text-transform: capitalize;
+}
+
+.login-wrapper .login-content .button-login:hover {
+    background-position: right;
+}
+
+.login-wrapper .login-content .custom-loader {
+    animation: loader 1s infinite;
+    display: flex;
+}
+
+.login-wrapper .img-dashboard {
+    width: 75%;
+    margin: auto;
+}
+
+@-moz-keyframes loader {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loader {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes loader {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

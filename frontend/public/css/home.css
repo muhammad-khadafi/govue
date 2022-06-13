@@ -1,0 +1,20 @@
+.home{
+    max-height: 100vh;
+    height: 100vh;
+    padding: 36px 0 0 0 !important;
+}
+
+.home .v-image{
+    width: 40%;
+    margin: auto;
+}
+
+.home p.desc{
+    font-size: 32px;
+    padding-top: 64px;
+    text-align: center;
+}
+
+.home .v-avatar{
+    border-radius: none !important;
+}

@@ -1,0 +1,6 @@
+---
+services:
+  backend:
+    image: registry.pusilkom.com/bapenda/bapenda-pkb-bbnkb-backend:develop
+    ports:
+      - "10100:8080"
